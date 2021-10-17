@@ -16,12 +16,25 @@
     }
 
     input {
+        color: white;
         background-color: #1a1a1a;
-    border: none;
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 530px;
+        border: none;
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 530px;
+    }
+
+    textarea {
+        color: white;
+        background-color: #1a1a1a;
+        border: none;
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 530px;
+        font-family: "Open Sans", sans-serif;
+        height: 155px;
     }
 }
 
@@ -30,4 +43,23 @@
     color: white;
     display: flex;
     flex-direction: column;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    button {
+        background-color: #000;
+        border: 1px solid #2DFCD8;
+        color: #2dfcd8;
+        width: 125px;
+        height: 45px;
+
+        &:hover {
+            background-color: #2DFCD8;
+            color: black;
+        }
+    }
 }
