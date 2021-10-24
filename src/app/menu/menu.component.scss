@@ -1,0 +1,35 @@
+.menu-content {
+    background: black;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding-top: 5px;
+    padding-bottom: 0px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 4;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+    img {
+        height: 60px;
+        cursor: pointer;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        margin-left: 32px;
+        font-weight: 400;
+
+        &:hover {
+            color: #FA2759;
+        }
+    }
+}

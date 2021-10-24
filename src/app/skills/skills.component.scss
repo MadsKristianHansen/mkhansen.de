@@ -1,7 +1,9 @@
 .skills-content {
     background-color: #1A1A1A;
-    height: 86vh;
     color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .headline {
@@ -11,12 +13,17 @@
     padding-top: 50px;
 }
 
-.skillset {
+.skills-container {
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.skill {
+.skill-box {
     background-color: white;
     color: black;
     display: flex;
@@ -31,7 +38,7 @@
     text-align: center;
 }
 
-.icon {
+.skill-img {
     background-color: white;
     height: 80px;
     width: 80px;

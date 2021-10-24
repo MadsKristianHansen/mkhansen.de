@@ -5,18 +5,40 @@
         <button>Angular</button>
         <button>Java Script</button>
     </div>
-    <div class="projects">
-        <div class="project">
-            <img src="assets/img/setup.jpg">
-        </div>
-        <div class="project">
+
+    <div class="projects-box">
+        <div (mouseenter)="showDetails1=true" (mouseleave)="showDetails1=false" class="project">
+            <div *ngIf="showDetails1" class="project-details">
+                <h2>Project Name</h2>
+                <p>Project Beschreibung</p>
+                <a href="#">Anzeigen</a>
+            </div>
             <img src="assets/img/setup2.jpg">
         </div>
-        <div class="project">
-            <img src="assets/img/setup2.jpg">
-        </div>
-        <div class="project">
+        <div (mouseenter)="showDetails2=true" (mouseleave)="showDetails2=false" class="project">
+            <div *ngIf="showDetails2" class="project-details">
+                <h2>Project Name</h2>
+                <p>Project Beschreibung</p>
+                <a href="#">Anzeigen</a>
+            </div>
             <img src="assets/img/setup.jpg">
+        </div>
+        <div (mouseenter)="showDetails3=true" (mouseleave)="showDetails3=false" class="project">
+            <div *ngIf="showDetails3" class="project-details">
+                <h2>Project Name</h2>
+                <p>Project Beschreibung</p>
+                <a href="#">Anzeigen</a>
+            </div>
+            <img src="assets/img/setup.jpg">
+        </div>
+        <div (mouseenter)="showDetails4=true" (mouseleave)="showDetails4=false" class="project">
+            <div *ngIf="showDetails4" class="project-details">
+                <h2>Project Name</h2>
+                <p>Project Beschreibung</p>
+                <a href="#">Anzeigen</a>
+            </div>
+            <img src="assets/img/setup2.jpg">
         </div>
     </div>
+
 </div>

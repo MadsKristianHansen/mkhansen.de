@@ -1,6 +1,5 @@
 .work-content {
     background-color: black;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,22 +35,57 @@
     }
 }
 
-.projects {
+.projects-box {
+    max-width: 900px;
     display: flex;
-    flex-flow: wrap;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-}
 
-.project {
-    background-color: white;
-    height: 300px;
-    width: 400px;
-    margin: 20px;
+    .project {
+        margin: 20px;
+        z-index: 1;  
 
-    img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
+        .project-details {
+            width: 400px;
+            height: 300px;
+            z-index: 1;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #fffc;
+            color: black;
+
+            h2 {
+                color:#e35d29;
+                margin-bottom: 8px;
+            }
+
+            p {
+                font-weight: 400;
+            }
+
+            a {
+                text-decoration: none;
+                color:#e35d29;
+                background-color: white;
+                padding: 20px;
+                margin-top: 15px;
+                border: 1px solid #e35d29;
+
+                &:hover {
+                    background-color: #e35d29;
+                    color: white;
+                }
+            }
+            }
+        
+        img {
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+        }
     }
 }
