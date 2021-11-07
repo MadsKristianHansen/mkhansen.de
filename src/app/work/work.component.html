@@ -1,13 +1,13 @@
 <div id="work" class="work-content main-padding">
     <div class="headline">My work</div>
     <div class="selector">
-        <button>All</button>
-        <button>Angular</button>
-        <button>Java Script</button>
+        <button (click)="showAllProjects()">All</button>
+        <button (click)="showAngularProjects()">Angular</button>
+        <button (click)="showJavaScriptProjects()">Java Script</button>
     </div>
 
     <div class="projects-box">
-        <div (mouseenter)="showDetails1=true" (mouseleave)="showDetails1=false" class="project">
+        <div *ngIf="showAll || showJavaScript" (mouseenter)="showDetails1=true" (mouseleave)="showDetails1=false" class="project">
             <div *ngIf="showDetails1" class="project-details">
                 <h2>Project Name</h2>
                 <p>Project Beschreibung</p>
@@ -15,7 +15,7 @@
             </div>
             <img src="assets/img/setup2.jpg">
         </div>
-        <div (mouseenter)="showDetails2=true" (mouseleave)="showDetails2=false" class="project">
+        <div *ngIf="showAll || showJavaScript" (mouseenter)="showDetails2=true" (mouseleave)="showDetails2=false" class="project">
             <div *ngIf="showDetails2" class="project-details">
                 <h2>Project Name</h2>
                 <p>Project Beschreibung</p>
@@ -23,7 +23,7 @@
             </div>
             <img src="assets/img/setup.jpg">
         </div>
-        <div (mouseenter)="showDetails3=true" (mouseleave)="showDetails3=false" class="project">
+        <div *ngIf="showAll || showAngular" (mouseenter)="showDetails3=true" (mouseleave)="showDetails3=false" class="project">
             <div *ngIf="showDetails3" class="project-details">
                 <h2>Project Name</h2>
                 <p>Project Beschreibung</p>
@@ -31,7 +31,7 @@
             </div>
             <img src="assets/img/setup.jpg">
         </div>
-        <div (mouseenter)="showDetails4=true" (mouseleave)="showDetails4=false" class="project">
+        <div *ngIf="showAll || showAngular" (mouseenter)="showDetails4=true" (mouseleave)="showDetails4=false" class="project">
             <div *ngIf="showDetails4" class="project-details">
                 <h2>Project Name</h2>
                 <p>Project Beschreibung</p>
