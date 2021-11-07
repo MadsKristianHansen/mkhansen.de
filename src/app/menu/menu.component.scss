@@ -12,6 +12,27 @@
     z-index: 4;
 }
 
+.menu {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+.language-selection {
+    color: white;
+    border: 1px solid white;
+    margin-left: 32px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    div {
+        &:hover {
+            color: #FA2759;
+            cursor: pointer;
+        }
+    }
+}
+
 .header {
     display: flex;
     align-items: center;

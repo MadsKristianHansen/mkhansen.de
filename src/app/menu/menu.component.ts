@@ -6,10 +6,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
+  german: boolean;
+  english: boolean;
 
-  constructor() { }
+
+  constructor() { 
+    this.german = true;
+    this.english = false;
+  }
 
   ngOnInit(): void {
+  }
+
+  selectGerman() {
+    this.german = true;
+    this.english = false;
+  }
+
+  selectEnglish() {
+    this.german = false;
+    this.english = true;
   }
 
 }
