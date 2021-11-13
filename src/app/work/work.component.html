@@ -1,9 +1,9 @@
 <div id="work" class="work-content main-padding">
     <div class="headline">My work</div>
     <div class="selector">
-        <button (click)="showAllProjects()">All</button>
-        <button (click)="showAngularProjects()">Angular</button>
-        <button (click)="showJavaScriptProjects()">Java Script</button>
+        <button [class.button-selected]="showAll" (click)="showAllProjects()">All</button>
+        <button [class.button-selected]="showAngular && !showAll" (click)="showAngularProjects()">Angular</button>
+        <button [class.button-selected]="showJavaScript && !showAll" (click)="showJavaScriptProjects()">Java Script</button>
     </div>
 
     <div class="projects-box">

@@ -9,5 +9,12 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'mkhansen';
 
-  constructor(public router: Router) {}
+  german: boolean;
+  english: boolean;
+
+  constructor(public router: Router) {
+
+    this.german = true;
+    this.english = false;
+  }
 }
