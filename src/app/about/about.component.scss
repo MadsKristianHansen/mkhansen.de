@@ -20,18 +20,21 @@
 
 .about-sub {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
     margin-top: 50px;
+}
+
+.about-text {
+    width: 460px;
 }
 
 .sub-slot {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
     padding: 20px;
+    width: 300px;
 }
 
 .left {
