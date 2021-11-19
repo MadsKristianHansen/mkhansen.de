@@ -7,13 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class WelcomeComponent implements OnInit {
 
-  @Input() german: boolean;
-  @Input() english: boolean;
-
-
   constructor() { 
-    this.german = true;
-    this.english = false;
   }
 
   ngOnInit(): void {

@@ -4,21 +4,21 @@
             <img routerLink="/" src="assets/img/logowhite.png">
         </div>
         <div class="menu">
-            <div *ngIf="german">
+            <div *ngIf="ls.german">
                 <a routerLink="/">HOME</a>
                 <a href="#about">ÜBER MICH</a>
                 <a href="#work">PORTFOLIO</a>
             </div>
 
-            <div *ngIf="!german">
+            <div *ngIf="ls.english">
                 <a routerLink="/">HOME</a>
                 <a href="#about">ABOUT</a>
                 <a href="#work">PORTFOLIO</a>
             </div>
 
             <div class="language-selection">
-                <div (click)="selectGerman()">DE</div>
-                <div (click)="selectEnglish()">EN</div>
+                <div (click)="ls.selectGerman()">DE</div>
+                <div (click)="ls.selectEnglish()">EN</div>
             </div>
         </div>
     </div>

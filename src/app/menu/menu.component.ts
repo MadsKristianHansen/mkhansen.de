@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { LanguageService } from '../language.service';
 
 @Component({
   selector: 'app-menu',
@@ -6,26 +7,16 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-  @Input() german: boolean;
-  @Input() english: boolean;
+   
+  
 
-
-  constructor() { 
-    this.german = true;
-    this.english = false;
+  constructor(public ls: LanguageService) { 
+  console.log('German language?', this.ls.german);
   }
 
   ngOnInit(): void {
   }
 
-  selectGerman() {
-    this.german = true;
-    this.english = false;
-  }
-
-  selectEnglish() {
-    this.german = false;
-    this.english = true;
-  }
+  
 
 }
