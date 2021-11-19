@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { LanguageService } from '../language.service';
 
 @Component({
   selector: 'app-footer',
@@ -11,7 +12,7 @@ export class FooterComponent implements OnInit {
   @Input() english: boolean;
 
 
-  constructor() { 
+  constructor(public ls: LanguageService) { 
     this.german = true;
     this.english = false;
   }

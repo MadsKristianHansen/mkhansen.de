@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LanguageService } from '../language.service';
 
 @Component({
   selector: 'app-work',
@@ -14,7 +15,7 @@ export class WorkComponent implements OnInit {
   showAll: boolean;
   showAngular: boolean;
   showJavaScript: boolean;
-  constructor() { 
+  constructor(public ls: LanguageService) { 
     this.showDetails1 = false;
     this.showDetails2 = false;
     this.showDetails3 = false;

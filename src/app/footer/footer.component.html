@@ -1,9 +1,16 @@
 <div class="footer-content main-padding">
-    <div>
+    <div *ngIf="ls.german">
         <a routerLink="/imprint">Impressum</a>
         -
         <a routerLink="/dataprotection">Datenschutz</a>
     </div>
+
+    <div *ngIf="ls.english">
+        <a routerLink="/imprint">Imprint</a>
+        -
+        <a routerLink="/dataprotection">Data Protection</a>
+    </div>
+
     <div>
         <img src="assets/img/linkedin-box-fill.png">
         <img src="assets/img/github-fill.png">

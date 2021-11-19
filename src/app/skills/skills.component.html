@@ -1,7 +1,12 @@
 <div class="skills-content main-padding">
-    <div class="headline">
+    <div *ngIf="ls.german" class="headline">
         Meine Skills
     </div>
+
+    <div *ngIf="ls.english" class="headline">
+        My Skills
+    </div>
+
     <div class="skills-container">
             <div class="skill-box">
                 <div class="skill-img">

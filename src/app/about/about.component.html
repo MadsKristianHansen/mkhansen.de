@@ -1,60 +1,134 @@
 <div id="about" class="about-content main-padding">
-    <div class="about-head">
-        <div class="left"><img src="assets/img/mads.jpg"></div>
-        <div class="right">
-            <div class="headline">Über mich.</div>
-            <div class="about-text">
-                Ich bin ein ruhevoller, disziplinierter Asket, interressiert an optimaler Gesundheit und
-                kontinuierlicher Selbstverbesserung.
-                Tägliches Weiterbilden, Meditieren und sportliches Training gehören zu meiner Routine.
-                Ich bin empathisch, offen & vielseitig interressiert. 
-                Einer meiner neu gewonnenen, stets weiter zu entfaltenden Leidenschaften ist das Programmieren. 
+
+    <div *ngIf="ls.german">
+        <div class="about-head">
+            <div class="left"><img src="assets/img/mads.jpg"></div>
+            <div class="right">
+                <div class="headline">Über mich.</div>
+                <div class="about-text">
+                    Ich bin ein ruhevoller, disziplinierter Asket, interressiert an optimaler Gesundheit und
+                    kontinuierlicher Selbstverbesserung.
+                    Tägliches Weiterbilden, Meditieren und sportliches Training gehören zu meiner Routine.
+                    Ich bin empathisch, offen & vielseitig interressiert.
+                    Einer meiner neu gewonnenen, stets weiter zu entfaltenden Leidenschaften ist das Programmieren.
+                </div>
+            </div>
+        </div>
+        <div class="about-sub">
+            <div class="sub-slot" style="padding-left: 0px;">
+                <div class="icon">
+                    <img src="assets/img/walk-line.png">
+                </div>
+                <h2>MEINE REISE BEGANN</h2>
+                <div class="text">
+                    mit der Auseinandersetzung der Werke Dr. Nūn Sava-Siva Amen-Ra's.
+                    Sowohl direkt als auch indirekt habe ich von ihm lernen können und im Zuge dessen meine
+                    Lebensausrichtung
+                    reevaluiert.
+                </div>
+            </div>
+            <div class="sub-slot">
+                <div class="icon">
+                    <img src="assets/img/heart-line.png">
+                </div>
+                <h2>FOLGLICH WURDE MIR KLAR</h2>
+                <div class="text">
+                    im Programmieren Erfüllung zu finden. Ich habe stets ein gewisses Grundinteresse für den IT-Bereich
+                    gehegt.
+                    Durch mein Reflektieren und Reevaluieren erkannte ich in der Ausrichtung professioneller
+                    Programmierer zu werden
+                    großes Potential und das Zusammenkommen idealistischer, praktischer und kreativer Motivationen
+                    meinerseits.
+                </div>
+            </div>
+            <div class="sub-slot">
+                <div class="icon">
+                    <img src="assets/img/search-line.png">
+                </div>
+                <h2>DIE DEVELOPER AKADEMIE</h2>
+                <div class="text">
+                    half mir als professionelles Ausbildungsinstitut die Freizeit neben meines Vollzeitjobs zu nutzen um
+                    mich erfolgreich zum qualifizierten Jr. Front-End Entwickler auszubilden
+                    und somit als Quereinsteiger in der IT-Branche Fuß fassen zu können.
+                </div>
+            </div>
+            <div class="sub-slot" style="padding-right: 0px;">
+                <div class="icon">
+                    <img src="assets/img/flight-takeoff-line.png">
+                </div>
+                <h2>DIE REISE GEHT WEITER</h2>
+                <div class="text">
+                    und ich freue mich, mich in diversen Projekten einbringen zu können, Potential zu entfalten und
+                    künftig mit Mehrwert zu stiften.
+                    Ich freue mich meine neu gewonnene Leidenschaft nun zum Beruf zu machen und mich somit auch mehr
+                    darauf fokusieren zu können.
+                    Zudem bin ich dankbar für jedwede Chance weiter zu lernen und inkrementell tiefer in die Materie
+                    eindringen zu können.
+                </div>
             </div>
         </div>
     </div>
-    <div class="about-sub">
-        <div class="sub-slot" style="padding-left: 0px;">
-            <div class="icon">
-                <img src="assets/img/walk-line.png">
-            </div>
-            <h2>MEINE REISE BEGANN</h2>
-            <div class="text">
-                mit der Auseinandersetzung der Werke Dr. Nūn Sava-Siva Amen-Ra's.
-                Sowohl direkt als auch indirekt habe ich von ihm lernen können und im Zuge dessen meine Lebensausrichtung
-                reevaluiert.
-            </div>
-        </div>
-        <div class="sub-slot">
-            <div class="icon">
-                <img src="assets/img/heart-line.png">
-            </div>
-            <h2>FOLGLICH WURDE MIR KLAR</h2>
-            <div class="text">
-                im Programmieren Erfüllung zu finden. Ich habe stets ein gewisses Grundinteresse für den IT-Bereich gehegt.
-                Durch mein Reflektieren und Reevaluieren erkannte ich in der Ausrichtung professioneller Programmierer zu werden 
-                großes Potential und das Zusammenkommen idealistischer, praktischer und kreativer Motivationen meinerseits. 
+
+    <div *ngIf="ls.english">
+        <div class="about-head">
+            <div class="left"><img src="assets/img/mads.jpg"></div>
+            <div class="right">
+                <div class="headline">About me.</div>
+                <div class="about-text">
+                    I am a reposeful, disciplined ascetic, interested in optimal health and
+                    continuous self development.
+                    Daily learning, meditation and physical training belong to my routine.
+                    I am empathic and open minded with a variety of interests.
+                    Always striving to further prosper it: My new passion for programming.
+                </div>
             </div>
         </div>
-        <div class="sub-slot">
-            <div class="icon">
-                <img src="assets/img/search-line.png">
+        <div class="about-sub">
+            <div class="sub-slot" style="padding-left: 0px;">
+                <div class="icon">
+                    <img src="assets/img/walk-line.png">
+                </div>
+                <h2>MY JOURNEY BEGAN</h2>
+                <div class="text">
+                    with my immersion into the works of Dr. Nūn Sava-Siva Amen-Ra.
+                    Both direct and indirectly have I been able to learn from him and
+                    in the course of this reevaluated my life purpose.
+                </div>
             </div>
-            <h2>DIE DEVELOPER AKADEMIE</h2>
-            <div class="text">
-                half mir als professionelles Ausbildungsinstitut die Freizeit neben meines Vollzeitjobs zu nutzen um mich erfolgreich zum qualifizierten Jr. Front-End Entwickler auszubilden
-                und somit als Quereinsteiger in der IT-Branche Fuß fassen zu können. 
+            <div class="sub-slot">
+                <div class="icon">
+                    <img src="assets/img/heart-line.png">
+                </div>
+                <h2>IT BECAME CLEAR TO ME</h2>
+                <div class="text">
+                    that I would find fulfillment in programming. I always had a basic interest in information technology.
+                    Through reflecting and reevaluating did I realize great potential in becoming a professional programmer
+                    and the coming together of idealistic, practical and creative motivations of myself. 
+                </div>
             </div>
-        </div>
-        <div class="sub-slot" style="padding-right: 0px;">
-            <div class="icon">
-                <img src="assets/img/flight-takeoff-line.png">
+            <div class="sub-slot">
+                <div class="icon">
+                    <img src="assets/img/search-line.png">
+                </div>
+                <h2>THE DEVELOPER ACADEMY</h2>
+                <div class="text">
+                    has helped me as a professional programming school in using my leisure time besides my fulltime-job
+                    to successfully qualify myself as a Jr. Front-End developer. All in order to start my career in the IT sector.
+                </div>
             </div>
-            <h2>DIE REISE GEHT WEITER</h2>
-            <div class="text">
-                und ich freue mich, mich in diversen Projekten einbringen zu können, Potential zu entfalten und künftig mit Mehrwert zu stiften.
-                Ich freue mich meine neu gewonnene Leidenschaft nun zum Beruf zu machen und mich somit auch mehr darauf fokusieren zu können. 
-                Zudem bin ich dankbar für jedwede Chance weiter zu lernen und inkrementell tiefer in die Materie eindringen zu können. 
+            <div class="sub-slot" style="padding-right: 0px;">
+                <div class="icon">
+                    <img src="assets/img/flight-takeoff-line.png">
+                </div>
+                <h2>THE JOURNEY CONTINUES</h2>
+                <div class="text">
+                    and I look forward to continuously immerse myself into diverse projects, to unfold potential and to be part of creating
+                    additional value in the IT sector and society in total. I am pleased to make my new passion of programming to my
+                    new profession and thus being able to further focus on it to a greater extent.
+                    Moreover I am grateful for any further chance to learn more and to incrementally dive deeper into the subject than before.  
+                </div>
             </div>
         </div>
     </div>
+
 </div>

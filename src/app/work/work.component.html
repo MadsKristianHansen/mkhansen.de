@@ -1,43 +1,101 @@
 <div id="work" class="work-content main-padding">
-    <div class="headline">Meine Projekte</div>
-    <div class="selector">
-        <button [class.button-selected]="showAll" (click)="showAllProjects()">Alle</button>
-        <button [class.button-selected]="showAngular && !showAll" (click)="showAngularProjects()">Angular</button>
-        <button [class.button-selected]="showJavaScript && !showAll" (click)="showJavaScriptProjects()">Java Script</button>
+    <div *ngIf="ls.german">
+        <div class="headline">Meine Projekte</div>
+        <div class="selector">
+            <button [class.button-selected]="showAll" (click)="showAllProjects()">Alle</button>
+            <button [class.button-selected]="showAngular && !showAll" (click)="showAngularProjects()">Angular</button>
+            <button [class.button-selected]="showJavaScript && !showAll" (click)="showJavaScriptProjects()">Java
+                Script</button>
+        </div>
+
+        <div class="projects-box">
+            <div *ngIf="showAll || showJavaScript" (mouseenter)="showDetails1=true" (mouseleave)="showDetails1=false"
+                class="project">
+                <div *ngIf="showDetails1" class="project-details">
+                    <h2>PJM-Kanban</h2>
+                    <p>Projekt Beschreibung</p>
+                    <a href="http://mads-kristian-hansen.developerakademie.com/pjm-kanbanboard/index.html">Anzeigen</a>
+                </div>
+                <img src="assets/img/pjmkanban.png">
+            </div>
+            <div *ngIf="showAll || showJavaScript" (mouseenter)="showDetails2=true" (mouseleave)="showDetails2=false"
+                class="project">
+                <div *ngIf="showDetails2" class="project-details">
+                    <h2>Kochwelt</h2>
+                    <p>Projekt Beschreibung</p>
+                    <a href="http://mads-kristian-hansen.developerakademie.com/kochwelt/index.html">Anzeigen</a>
+                </div>
+                <img class="kochwelt" src="assets/img/kochwelt3.png">
+            </div>
+            <div *ngIf="showAll || showAngular" (mouseenter)="showDetails3=true" (mouseleave)="showDetails3=false"
+                class="project">
+                <div *ngIf="showDetails3" class="project-details">
+                    <h2>Lieferando</h2>
+                    <p>Projekt Beschreibung</p>
+                    <a
+                        href="http://mads-kristian-hansen.developerakademie.com/lieferando/14%20Lieferando/lieferando.html">Anzeigen</a>
+                </div>
+                <img src="assets/img/setup.jpg">
+            </div>
+            <div *ngIf="showAll || showAngular" (mouseenter)="showDetails4=true" (mouseleave)="showDetails4=false"
+                class="project">
+                <div *ngIf="showDetails4" class="project-details">
+                    <h2>Projekt Name</h2>
+                    <p>Project Beschreibung</p>
+                    <a href="#">Anzeigen</a>
+                </div>
+                <img src="assets/img/setup2.jpg">
+            </div>
+        </div>
     </div>
 
-    <div class="projects-box">
-        <div *ngIf="showAll || showJavaScript" (mouseenter)="showDetails1=true" (mouseleave)="showDetails1=false" class="project">
-            <div *ngIf="showDetails1" class="project-details">
-                <h2>PJM-Kanban</h2>
-                <p>Project Beschreibung</p>
-                <a href="http://mads-kristian-hansen.developerakademie.com/pjm-kanbanboard/index.html">Anzeigen</a>
-            </div>
-            <img src="assets/img/pjmkanban.png">
+    <div *ngIf="ls.english">
+        <div class="headline">My Projects</div>
+        <div class="selector">
+            <button [class.button-selected]="showAll" (click)="showAllProjects()">All</button>
+            <button [class.button-selected]="showAngular && !showAll" (click)="showAngularProjects()">Angular</button>
+            <button [class.button-selected]="showJavaScript && !showAll" (click)="showJavaScriptProjects()">Java
+                Script</button>
         </div>
-        <div *ngIf="showAll || showJavaScript" (mouseenter)="showDetails2=true" (mouseleave)="showDetails2=false" class="project">
-            <div *ngIf="showDetails2" class="project-details">
-                <h2>Kochwelt</h2>
-                <p>Project Beschreibung</p>
-                <a href="http://mads-kristian-hansen.developerakademie.com/kochwelt/index.html">Anzeigen</a>
+
+        <div class="projects-box">
+            <div *ngIf="showAll || showJavaScript" (mouseenter)="showDetails1=true" (mouseleave)="showDetails1=false"
+                class="project">
+                <div *ngIf="showDetails1" class="project-details">
+                    <h2>PJM-Kanban</h2>
+                    <p>Project Description</p>
+                    <a href="http://mads-kristian-hansen.developerakademie.com/pjm-kanbanboard/index.html">Anzeigen</a>
+                </div>
+                <img src="assets/img/pjmkanban.png">
             </div>
-            <img class="kochwelt" src="assets/img/kochwelt3.png">
-        </div>
-        <div *ngIf="showAll || showAngular" (mouseenter)="showDetails3=true" (mouseleave)="showDetails3=false" class="project">
-            <div *ngIf="showDetails3" class="project-details">
-                <h2>Lieferando</h2>
-                <p>Project Beschreibung</p>
-                <a href="http://mads-kristian-hansen.developerakademie.com/lieferando/14%20Lieferando/lieferando.html">Anzeigen</a>
+            <div *ngIf="showAll || showJavaScript" (mouseenter)="showDetails2=true" (mouseleave)="showDetails2=false"
+                class="project">
+                <div *ngIf="showDetails2" class="project-details">
+                    <h2>Kochwelt</h2>
+                    <p>Project Description</p>
+                    <a href="http://mads-kristian-hansen.developerakademie.com/kochwelt/index.html">Anzeigen</a>
+                </div>
+                <img class="kochwelt" src="assets/img/kochwelt3.png">
             </div>
-            <img src="assets/img/setup.jpg">
-        </div>
-        <div *ngIf="showAll || showAngular" (mouseenter)="showDetails4=true" (mouseleave)="showDetails4=false" class="project">
-            <div *ngIf="showDetails4" class="project-details">
-                <h2>Project Name</h2>
-                <p>Project Beschreibung</p>
-                <a href="#">Anzeigen</a>
+            <div *ngIf="showAll || showAngular" (mouseenter)="showDetails3=true" (mouseleave)="showDetails3=false"
+                class="project">
+                <div *ngIf="showDetails3" class="project-details">
+                    <h2>Lieferando</h2>
+                    <p>Project Description</p>
+                    <a
+                        href="http://mads-kristian-hansen.developerakademie.com/lieferando/14%20Lieferando/lieferando.html">Anzeigen</a>
+                </div>
+                <img src="assets/img/setup.jpg">
             </div>
-            <img src="assets/img/setup2.jpg">
+            <div *ngIf="showAll || showAngular" (mouseenter)="showDetails4=true" (mouseleave)="showDetails4=false"
+                class="project">
+                <div *ngIf="showDetails4" class="project-details">
+                    <h2>Project Name</h2>
+                    <p>Project Description</p>
+                    <a href="#">Anzeigen</a>
+                </div>
+                <img src="assets/img/setup2.jpg">
+            </div>
         </div>
     </div>
 
