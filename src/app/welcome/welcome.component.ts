@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-welcome',
@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomeComponent implements OnInit {
 
-  constructor() { }
+  @Input() german: boolean;
+  @Input() english: boolean;
+
+
+  constructor() { 
+    this.german = true;
+    this.english = false;
+  }
 
   ngOnInit(): void {
   }

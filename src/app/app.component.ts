@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,8 +9,8 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'mkhansen';
 
-  german: boolean;
-  english: boolean;
+  @Input() german: boolean;
+  @Input() english: boolean;
 
   constructor(public router: Router) {
 
