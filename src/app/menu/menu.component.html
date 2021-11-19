@@ -1,20 +1,22 @@
 <div class="menu-content main-padding">
     <div class="header">
         <div class="logo">
-            <img routerLink="/" src="assets/img/logowhite.png">
+        <a href="#top" style="margin-left: 0;"><img src="assets/img/logowhite.png"></a>
         </div>
         <div class="menu">
             <div *ngIf="ls.german">
-                <a routerLink="/">HOME</a>
+                <a href="#top">HOME</a>
                 <a href="#about">ÜBER MICH</a>
                 <a href="#work">PORTFOLIO</a>
             </div>
 
             <div *ngIf="ls.english">
-                <a routerLink="/">HOME</a>
+                <a href="#top">HOME</a>
                 <a href="#about">ABOUT</a>
                 <a href="#work">PORTFOLIO</a>
             </div>
+
+            
 
             <div class="language-selection">
                 <div (click)="ls.selectGerman()">DE</div>

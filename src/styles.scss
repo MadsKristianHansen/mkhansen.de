@@ -8,3 +8,19 @@ body {
     padding-right: 120px;
     padding-bottom: 70px;
 }
+
+@media(max-width:1200px) {
+
+    .main-padding {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+}
+
+@media(max-width:950px) {
+
+    .main-padding {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+}
