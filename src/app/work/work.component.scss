@@ -99,3 +99,32 @@
 .kochwelt {
     object-fit: contain;
 }
+
+@media(max-width:450px) {
+    .projects-box {
+      .project {
+          
+              img {
+                  width: 250px;
+                  height: 200px;
+              }
+          .project-details {
+            width: 250px;
+            height: 200px;
+
+            a {
+                padding: 10px;
+            }
+          }
+      }
+    }
+
+    .selector {
+
+        margin: 5px;
+        button {
+            height: 50px;
+            width: 80px;
+        }
+    }
+}

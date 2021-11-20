@@ -12,6 +12,7 @@
     p {
         color: #989898;
         margin-bottom: 40px;
+        text-align: center;
     }
 
     input {
@@ -59,6 +60,41 @@
         &:hover {
             background-color: #2DFCD8;
             color: black;
+        }
+    }
+}
+
+@media(max-width:720px) {
+    .contact-content {
+        h2 {
+        font-size: 7.2vw;
+    }}
+}
+
+@media(max-width:650px) {
+    .form {
+        align-items: center;
+    }
+
+    .contact-content {
+        input {
+            width: 400px;
+        }
+
+        textarea {
+            width: 400px;
+        }
+    }
+}
+
+@media(max-width:450px) {
+    .contact-content {
+        input {
+            width: 200px;
+        }
+
+        textarea {
+            width: 200px;
         }
     }
 }

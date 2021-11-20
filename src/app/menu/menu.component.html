@@ -1,7 +1,7 @@
 <div class="menu-content main-padding">
     <div class="header">
         <div class="logo">
-        <a href="#top" style="margin-left: 0;"><img src="assets/img/logowhite.png"></a>
+        <a class="img-a" href="#top" style="margin-left: 0;"><img src="assets/img/logowhite.png"></a>
         </div>
         <div class="menu">
             <div *ngIf="ls.german">
@@ -16,7 +16,19 @@
                 <a href="#work">PORTFOLIO</a>
             </div>
 
-            
+            <div  id="symbol" class="d-none responsive-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div id="overlay-menu" class="overlay-menu d-none">
+                <a href="#">Link1</a>
+                <a href="#">Link2</a>
+                <a href="#">Link3</a>
+                <a href="#">Link4</a>
+                <button class="button">Schließen</button>
+            </div>
 
             <div class="language-selection">
                 <div (click)="ls.selectGerman()">DE</div>

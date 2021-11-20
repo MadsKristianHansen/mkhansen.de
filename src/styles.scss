@@ -24,3 +24,11 @@ body {
     padding-right: 30px;
 }
 }
+
+@media(max-width:450px) {
+
+    .main-padding {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+}

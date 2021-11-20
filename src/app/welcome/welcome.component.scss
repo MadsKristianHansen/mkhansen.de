@@ -153,3 +153,30 @@
       opacity: 1;
     }
   }
+
+  @media(max-width:650px) {
+    .welcome-main {
+      flex-direction: column;
+    }
+
+    .greeting {
+      margin-top: 20px;
+      justify-content: center;
+    align-items: center;
+    text-align: center;
+
+      a {
+        margin-top: 25px;
+        width: 250px;
+        height: 50px;
+      }
+    }
+  }
+
+  @media(max-width:550px) {
+    .welcome-main {
+      font-size: 20px;
+    }
+  }
+
+  
