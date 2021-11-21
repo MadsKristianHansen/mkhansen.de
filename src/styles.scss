@@ -1,6 +1,11 @@
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .main-padding {
@@ -32,3 +37,5 @@ body {
     padding-right: 10px;
 }
 }
+
+

@@ -5,15 +5,15 @@
         </div>
         <div class="menu">
             <div *ngIf="ls.german">
-                <a href="#top">HOME</a>
-                <a href="#about">ÜBER MICH</a>
-                <a href="#work">PORTFOLIO</a>
+                <a class="menu-animation before after" href="#top">HOME</a>
+                <a class="menu-animation before after" href="#about">ÜBER MICH</a>
+                <a class="menu-animation before after" href="#work">PORTFOLIO</a>
             </div>
 
             <div *ngIf="ls.english">
-                <a href="#top">HOME</a>
-                <a href="#about">ABOUT</a>
-                <a href="#work">PORTFOLIO</a>
+                <a class="menu-animation before after" href="#top">HOME</a>
+                <a class="menu-animation before after" href="#about">ABOUT</a>
+                <a class="menu-animation before after" href="#work">PORTFOLIO</a>
             </div>
 
             <div  id="symbol" class="d-none responsive-menu">
@@ -31,8 +31,8 @@
             </div>
 
             <div class="language-selection">
-                <div (click)="ls.selectGerman()">DE</div>
-                <div (click)="ls.selectEnglish()">EN</div>
+                <div (click)="ls.selectGerman()"><a class="no-margin">DE</a></div>
+                <div (click)="ls.selectEnglish()"><a class="no-margin">EN</a></div>
             </div>
         </div>
     </div>
