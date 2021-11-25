@@ -9,12 +9,12 @@
         </div>
 
         <div class="projects-box">
-            <div *ngIf="showAll || showJavaScript" (mouseenter)="showDetails1=true" (mouseleave)="showDetails1=false"
+            <div [hidden]="!showJavaScript" [hidden]="!showAll" (mouseenter)="showDetails1=true" (mouseleave)="showDetails1=false"
                 class="project">
                 <div *ngIf="showDetails1" class="project-details">
                     <h2>PJM-Kanban</h2>
                     <p>Javascript/Firebase - Kanban</p>
-                    <a href="http://mads-kristian-hansen.developerakademie.com/pjm-kanbanboard/index.html">Anzeigen</a>
+                    <a href="http://mads-kristian-hansen.developerakademie.com/pjm-kanbanboard/index.html" target="_blank">Anzeigen</a>
                 </div>
                 <img src="assets/img/pjmkanban.png">
             </div>
@@ -23,7 +23,7 @@
                 <div *ngIf="showDetails2" class="project-details">
                     <h2>Kochwelt</h2>
                     <p>Javascript - Rezeptseite</p>
-                    <a href="http://mads-kristian-hansen.developerakademie.com/kochwelt/index.html">Anzeigen</a>
+                    <a href="http://mads-kristian-hansen.developerakademie.com/kochwelt/index.html" target="_blank">Anzeigen</a>
                 </div>
                 <img class="kochwelt" src="assets/img/kochwelt3.png">
             </div>
@@ -32,7 +32,7 @@
                 <div *ngIf="showDetails3" class="project-details">
                     <h2>Lieferando</h2>
                     <p>Javascript - Lieferando Nachbau</p>
-                    <a href="http://mads-kristian-hansen.developerakademie.com/lieferando/lieferando.html">Anzeigen</a>
+                    <a href="http://mads-kristian-hansen.developerakademie.com/lieferando/lieferando.html" target="_blank">Anzeigen</a>
                 </div>
                 <img src="assets/img/lieferando2.png">
             </div>
@@ -63,7 +63,7 @@
                 <div *ngIf="showDetails1" class="project-details">
                     <h2>PJM-Kanban</h2>
                     <p>Javascript/Firebase - Kanban</p>
-                    <a href="http://mads-kristian-hansen.developerakademie.com/pjm-kanbanboard/index.html">Show</a>
+                    <a href="http://mads-kristian-hansen.developerakademie.com/pjm-kanbanboard/index.html" target="_blank">Show</a>
                 </div>
                 <img src="assets/img/pjmkanban.png">
             </div>
@@ -72,7 +72,7 @@
                 <div *ngIf="showDetails2" class="project-details">
                     <h2>Kochwelt</h2>
                     <p>Javascript - Recipe website</p>
-                    <a href="http://mads-kristian-hansen.developerakademie.com/kochwelt/index.html">Show</a>
+                    <a href="http://mads-kristian-hansen.developerakademie.com/kochwelt/index.html" target="_blank">Show</a>
                 </div>
                 <img class="kochwelt" src="assets/img/kochwelt3.png">
             </div>
@@ -82,7 +82,7 @@
                     <h2>Lieferando</h2>
                     <p>Javascript - Lieferando replica</p>
                     <a
-                        href="http://mads-kristian-hansen.developerakademie.com/lieferando/14%20Lieferando/lieferando.html">Show</a>
+                        href="http://mads-kristian-hansen.developerakademie.com/lieferando/14%20Lieferando/lieferando.html" target="_blank">Show</a>
                 </div>
                 <img src="assets/img/lieferando2.png">
             </div>
