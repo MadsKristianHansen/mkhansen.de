@@ -1,3 +1,4 @@
+
 .about-content {
     background-color: #1A1A1A;
     color: white;
@@ -122,17 +123,17 @@
 
 
 .foo {
-    transition: transform 2s ease-out;
+    transition: transform 4s ease-out;
   }
    
   .foo.sn-viewport--out {
-    transform: translateX(-20px);
-    opacity: 0;
+    transform: translateX(-300px);
+    
   }
    
   .foo.sn-viewport--in {
     transform: translateX(0);
-    opacity: 1;
+    
   }
 
   .foo2 {
@@ -140,25 +141,52 @@
   }
    
   .foo2.sn-viewport--out {
-    transform: translateX(-200px);
+    transform: translateX(-300px);
+    
   }
    
   .foo2.sn-viewport--in {
     transform: translateX(0);
+    
   }
 
-  .highlight {
-    background-color: yellow;
-  }
-
-  .cool {
+  .foo3 {
     transition: transform 2s ease-out;
   }
    
-  .cool.sn-viewport--out {
-    transform: translateX(-200px);
+  .foo3.sn-viewport--out {
+    transform: translateX(300px);
   }
    
-  .cool.sn-viewport--in {
+  .foo3.sn-viewport--in {
     transform: translateX(0);
   }
+
+  .foo4 {
+    transition: transform 4s ease-out;
+  }
+   
+  .foo4.sn-viewport--out {
+    transform: translateX(300px);
+  }
+   
+  .foo4.sn-viewport--in {
+    transform: translateX(0);
+  }
+
+.opacity {
+    transition: opacity 3s ease-in;
+    
+    
+}
+
+  .opacity.sn-viewport--out {
+      opacity: 0 ;
+      
+      
+  }
+
+  .opacity.sn-viewport--in {
+    opacity: 1 ;
+    
+}

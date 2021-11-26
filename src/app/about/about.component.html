@@ -1,15 +1,7 @@
 <div id="about" class="about-content main-padding">
 
-    <p
-  
-  [ngClass]="{highlight: highlight}"
-  snInViewport
-  (inViewportChange)="onInViewportChange($event)">
-  Amet tempor excepteur occaecat nulla.
-</p>
-
     <div *ngIf="ls.german">
-        <div class="about-head">
+        <div class="about-head opacity" snInViewport>
             <div class="left"><img src="assets/img/mads.jpg"></div>
             <div class="right">
                 <div class="headline">Über mich.</div>
@@ -22,12 +14,10 @@
                 </div>
             </div>
         </div>
-        <div class="about-sub">
-            <div class="sub-slot slot-left" [ngClass]="{cool: cool}"
-            snInViewport
-            (inViewportChange)="onInViewportChange($event)">
+        <div class="about-sub opacity" snInViewport>
+            <div class="sub-slot slot-left foo" snInViewport>
                 <div class="icon">
-                    <img src="assets/img/walk-line.png">
+                    <img src="assets/img/running-man-64.png">
                 </div>
                 <h2>MEINE REISE BEGANN</h2>
                 <div class="text">
@@ -39,7 +29,7 @@
             </div>
             <div class="sub-slot foo2" snInViewport>
                 <div class="icon">
-                    <img src="assets/img/heart-line.png">
+                    <img src="assets/img/favorite-3-64.png">
                 </div>
                 <h2>FOLGLICH WURDE MIR KLAR</h2>
                 <div class="text">
@@ -51,9 +41,9 @@
                     meinerseits.
                 </div>
             </div>
-            <div class="sub-slot">
+            <div class="sub-slot foo3" snInViewport>
                 <div class="icon">
-                    <img src="assets/img/search-line.png">
+                    <img src="assets/img/search-9-64.png">
                 </div>
                 <h2>DIE DEVELOPER AKADEMIE</h2>
                 <div class="text">
@@ -62,9 +52,9 @@
                     und somit als Quereinsteiger in der IT-Branche Fuß fassen zu können.
                 </div>
             </div>
-            <div class="sub-slot slot-right">
+            <div class="sub-slot slot-right foo4" snInViewport>
                 <div class="icon">
-                    <img src="assets/img/flight-takeoff-line.png">
+                    <img src="assets/img/airplane-takeoff-64.png">
                 </div>
                 <h2>DIE REISE GEHT WEITER</h2>
                 <div class="text">
@@ -80,7 +70,7 @@
     </div>
 
     <div *ngIf="ls.english">
-        <div class="about-head">
+        <div class="about-head opacity" snInViewport>
             <div class="left"><img src="assets/img/mads.jpg"></div>
             <div class="right">
                 <div class="headline">About me.</div>
@@ -93,10 +83,10 @@
                 </div>
             </div>
         </div>
-        <div class="about-sub">
-            <div class="sub-slot slot-left">
+        <div class="about-sub opacity" snInViewport>
+            <div class="sub-slot slot-left foo" snInViewport>
                 <div class="icon">
-                    <img src="assets/img/walk-line.png">
+                    <img src="assets/img/running-man-64.png">
                 </div>
                 <h2>MY JOURNEY BEGAN</h2>
                 <div class="text">
@@ -105,9 +95,9 @@
                     in the course of this reevaluated my life purpose.
                 </div>
             </div>
-            <div class="sub-slot">
+            <div class="sub-slot foo2" snInViewport>
                 <div class="icon">
-                    <img src="assets/img/heart-line.png">
+                    <img src="assets/img/favorite-3-64.png">
                 </div>
                 <h2>IT BECAME CLEAR TO ME</h2>
                 <div class="text">
@@ -116,9 +106,9 @@
                     and the coming together of idealistic, practical and creative motivations of myself. 
                 </div>
             </div>
-            <div class="sub-slot">
+            <div class="sub-slot foo3" snInViewport>
                 <div class="icon">
-                    <img src="assets/img/search-line.png">
+                    <img src="assets/img/search-9-64.png">
                 </div>
                 <h2>THE DEVELOPER ACADEMY</h2>
                 <div class="text">
@@ -126,9 +116,9 @@
                     to successfully qualify myself as a Jr. Front-End developer. All in order to start my career in the IT sector.
                 </div>
             </div>
-            <div class="sub-slot slot-right">
+            <div class="sub-slot slot-right foo4" snInViewport>
                 <div class="icon">
-                    <img src="assets/img/flight-takeoff-line.png">
+                    <img src="assets/img/airplane-takeoff-64.png">
                 </div>
                 <h2>THE JOURNEY CONTINUES</h2>
                 <div class="text">
