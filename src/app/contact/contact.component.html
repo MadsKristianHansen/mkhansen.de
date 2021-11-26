@@ -5,14 +5,14 @@
         <p>Melden Sie sich mithilfe des Kontaktformulars, oder direkt per E-Mail an mads_hansen@hotmail.de</p>
         <form action="http://mads-kristian-hansen.developerakademie.com/mkhansen/send_mail.php" method="POST">
             <div class="form" >
-                <div class="info">Name<input name="name" type="text" placeholder="Geben Sie Ihren Namen ein"></div>
-                <div class="info">Email-adresse<input name="email" type="text" placeholder="Geben Sie Ihre E-Mail Adresse ein">
+                <div class="info">Name<input name="name" type="text" placeholder="Geben Sie Ihren Namen ein" required></div>
+                <div class="info">Email-adresse<input name="email" type="email" placeholder="Geben Sie Ihre E-Mail Adresse ein" required>
                 </div>
                 <div class="info">
                     Nachricht
-                    <textarea name="message" cols="30" rows="10" placeholder="Geben Sie Ihre Nachricht ein"></textarea>
+                    <textarea name="message" cols="30" rows="10" placeholder="Geben Sie Ihre Nachricht ein" required></textarea>
                 </div>
-                <button type="submit">Senden</button>
+                <input class="send-button" type="submit" value="Send">
             </div>
         </form>
     </div>
@@ -22,14 +22,14 @@
         <p>Get in touch via the form below, or by emailing mads_hansen@hotmail.de</p>
         <form action="http://mads-kristian-hansen.developerakademie.com/mkhansen/send_mail.php" method="POST">
             <div class="form">
-                <div class="info">Name<input name="name" type="text" placeholder="Enter your name"></div>
-                <div class="info">Email adress<input name="email" type="text" placeholder="Enter your Email address">
+                <div class="info">Name<input name="name" type="text" placeholder="Enter your name" required></div>
+                <div class="info">Email adress<input name="email" type="email" placeholder="Enter your Email address" required>
                 </div>
                 <div class="info">
                     Message
-                    <textarea name="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                    <textarea name="message" cols="30" rows="10" placeholder="Enter your message" required></textarea>
                 </div>
-                <button type="submit">Send</button>
+                <input class="send-button" type="submit" value="Send">
             </div>
         </form>
     </div>
