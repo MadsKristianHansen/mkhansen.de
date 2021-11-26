@@ -3,7 +3,7 @@
 ########### CONFIG ###############
 
 $recipient = 'mads_hansen@hotmail.de';
-$redirect = 'index.html';
+
 
 ########### CONFIG END ###########
 
@@ -43,7 +43,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
         $headers = "From: " . $_POST['email'];
 
         mail($recipient, $subject, $_POST['message'], $headers);
-        header("Location: " . $redirect); 
+        
 
         break;
     default: //Reject any non POST or OPTIONS requests.

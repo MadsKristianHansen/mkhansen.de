@@ -8,9 +8,22 @@ import { LanguageService } from '../language.service';
 })
 export class ContactComponent implements OnInit {
 
-  constructor(public ls: LanguageService) { }
+  mailsuccess: boolean;
+
+  constructor(public ls: LanguageService) {
+    this.mailsuccess = false;
+   }
 
   ngOnInit(): void {
+  }
+
+  senden() {
+    this.mailsuccess = true;
+    return false;
+  }
+
+  goback() {
+    this.mailsuccess = false;
   }
 
 }
