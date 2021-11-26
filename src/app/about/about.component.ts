@@ -13,5 +13,17 @@ export class AboutComponent implements OnInit {
   ngOnInit(): void {
   }
   
+  foo = false;
+  highlight = false;
+  cool = false;
+ 
+  onInViewportChange(inViewport: boolean) {
+    
+    setTimeout(() => {
+      this.foo = inViewport;
+      this.highlight = inViewport;
+      this.cool = inViewport;
+    }, 2000)
+  }
 
 }

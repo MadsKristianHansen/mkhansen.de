@@ -1,5 +1,13 @@
 <div id="about" class="about-content main-padding">
 
+    <p
+  
+  [ngClass]="{highlight: highlight}"
+  snInViewport
+  (inViewportChange)="onInViewportChange($event)">
+  Amet tempor excepteur occaecat nulla.
+</p>
+
     <div *ngIf="ls.german">
         <div class="about-head">
             <div class="left"><img src="assets/img/mads.jpg"></div>
@@ -15,7 +23,9 @@
             </div>
         </div>
         <div class="about-sub">
-            <div class="sub-slot slot-left">
+            <div class="sub-slot slot-left" [ngClass]="{cool: cool}"
+            snInViewport
+            (inViewportChange)="onInViewportChange($event)">
                 <div class="icon">
                     <img src="assets/img/walk-line.png">
                 </div>
@@ -27,7 +37,7 @@
                     reevaluiert.
                 </div>
             </div>
-            <div class="sub-slot">
+            <div class="sub-slot foo2" snInViewport>
                 <div class="icon">
                     <img src="assets/img/heart-line.png">
                 </div>

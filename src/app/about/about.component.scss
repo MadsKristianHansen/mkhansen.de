@@ -60,7 +60,7 @@
 }
 
 .icon {
-    background-color: #2DFCD8;
+    background-color: #080a09;
     height: 80px;
     width: 80px;
     display: flex;
@@ -68,6 +68,8 @@
     align-items: center;
     border-radius: 200px;
     margin-bottom: 20px;
+    box-shadow: 0 0 5px white;
+    border: 1px solid white;
 
     img {
         height: 40px;
@@ -119,4 +121,44 @@
 }
 
 
+.foo {
+    transition: transform 2s ease-out;
+  }
+   
+  .foo.sn-viewport--out {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+   
+  .foo.sn-viewport--in {
+    transform: translateX(0);
+    opacity: 1;
+  }
 
+  .foo2 {
+    transition: transform 2s ease-out;
+  }
+   
+  .foo2.sn-viewport--out {
+    transform: translateX(-200px);
+  }
+   
+  .foo2.sn-viewport--in {
+    transform: translateX(0);
+  }
+
+  .highlight {
+    background-color: yellow;
+  }
+
+  .cool {
+    transition: transform 2s ease-out;
+  }
+   
+  .cool.sn-viewport--out {
+    transform: translateX(-200px);
+  }
+   
+  .cool.sn-viewport--in {
+    transform: translateX(0);
+  }

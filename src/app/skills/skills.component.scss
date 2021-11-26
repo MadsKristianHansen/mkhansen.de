@@ -24,8 +24,8 @@
 }
 
 .skill-box {
-    background-color: white;
-    color: black;
+    background-color: #b6a4a04d;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,11 +36,19 @@
     border-radius: 11px;
     font-size: 18px;
     text-align: center;
+    box-shadow: 0 0 4px #c9bdbd;
+}
+
+.two {
+    margin: 0px !important; 
+    height: 60px !important;
+    width: 60px !important;
+    background-color: #b6a4a0 !important;
 }
 
 .skill-img {
-    background-color: white;
     height: 80px;
+    background-color: #b6a4a04d;
     width: 80px;
     margin-top: -40px;
     margin-bottom: 22px;
@@ -49,6 +57,7 @@
     align-items: center;
     border-radius: 160px;
     box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+    border: 2px solid #b6a4a04d;
 
     img {
         height: 40px;

@@ -9,7 +9,7 @@
         </div>
 
         <div class="projects-box">
-            <div [hidden]="!showJavaScript" [hidden]="!showAll" (mouseenter)="showDetails1=true" (mouseleave)="showDetails1=false"
+            <div *ngIf="showJavaScript || showAll" (mouseenter)="showDetails1=true" (mouseleave)="showDetails1=false"
                 class="project">
                 <div *ngIf="showDetails1" class="project-details">
                     <h2>PJM-Kanban</h2>

@@ -13,6 +13,7 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { DataprotectionComponent } from './dataprotection/dataprotection.component';
+import { InViewportModule } from '@thisissoon/angular-inviewport';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { DataprotectionComponent } from './dataprotection/dataprotection.compone
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    InViewportModule
   ],
   providers: [],
   bootstrap: [AppComponent]
