@@ -176,17 +176,12 @@
 
 .opacity {
     transition: opacity 3s ease-in;
-    
-    
 }
 
   .opacity.sn-viewport--out {
       opacity: 0 ;
-      
-      
   }
 
   .opacity.sn-viewport--in {
-    opacity: 1 ;
-    
+    opacity: 1 ;  
 }

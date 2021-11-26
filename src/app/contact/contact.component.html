@@ -2,15 +2,19 @@
 
     <div *ngIf="ls.german" class="contact-content">
         <h2>Kontaktiere mich.</h2>
-        <p>Melden Sie sich mithilfe des Kontaktformulars, oder direkt per E-Mail an mads_hansen@hotmail.de</p>
-        <form *ngIf="!mailsuccess" (submit)="senden()" action="http://mads-kristian-hansen.developerakademie.com/mkhansen/send_mail.php" method="POST">
-            <div class="form" >
-                <div class="info">Name<input name="name" type="text" placeholder="Geben Sie Ihren Namen ein" required></div>
-                <div class="info">Email-adresse<input name="email" type="email" placeholder="Geben Sie Ihre E-Mail Adresse ein" required>
+        <p *ngIf="!mailsuccess">Melden Sie sich mithilfe des Kontaktformulars, oder direkt per E-Mail an mads_hansen@hotmail.de</p>
+        <form *ngIf="!mailsuccess" (submit)="senden()"
+            action="http://mads-kristian-hansen.developerakademie.com/mkhansen/send_mail.php" method="POST">
+            <div class="form">
+                <div class="info">Name<input name="name" type="text" placeholder="Geben Sie Ihren Namen ein" required>
+                </div>
+                <div class="info">Email-adresse<input name="email" type="email"
+                        placeholder="Geben Sie Ihre E-Mail Adresse ein" required>
                 </div>
                 <div class="info">
                     Nachricht
-                    <textarea name="message" cols="30" rows="10" placeholder="Geben Sie Ihre Nachricht ein" required></textarea>
+                    <textarea name="message" cols="30" rows="10" placeholder="Geben Sie Ihre Nachricht ein"
+                        required></textarea>
                 </div>
                 <input class="send-button" type="submit" value="Senden">
             </div>
@@ -19,11 +23,12 @@
 
     <div *ngIf="ls.english" class="contact-content">
         <h2>Contact me.</h2>
-        <p>Get in touch via the form below, or by emailing mads_hansen@hotmail.de</p>
+        <p *ngIf="!mailsuccess">Get in touch via the form below, or by emailing mads_hansen@hotmail.de</p>
         <form *ngIf="!mailsuccess" (submit)="senden()">
             <div class="form">
                 <div class="info">Name<input name="name" type="text" placeholder="Enter your name" required></div>
-                <div class="info">Email adress<input name="email" type="email" placeholder="Enter your Email address" required>
+                <div class="info">Email adress<input name="email" type="email" placeholder="Enter your Email address"
+                        required>
                 </div>
                 <div class="info">
                     Message
@@ -34,8 +39,30 @@
         </form>
     </div>
 
-    <div *ngIf="mailsuccess" class="test">
-        <button (click)="goback()" >Ok</button>
+    <div *ngIf="mailsuccess" class="success-container">
+        <div class="success-content opacity" [@inOutAnimation]>
+
+            <div class="container">
+
+                <div *ngIf="ls.german" class="text">
+                    <h1>Nachricht gesendet!</h1>
+                </div>
+
+                <div *ngIf="ls.english" class="text">
+                    <h1>Message sent!</h1>
+                </div>
+
+                <div class="loading">
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="animation-delay" *ngIf="ls.german">Ihre E-Mail wurde erfolgreich versendet! Ich werde mich baldmöglichst bei Ihnen melden.</p>
+            <p class="animation-delay" *ngIf="ls.english">Your email has been successfully sent! I will reply as soon as possible. </p>
+            <button class="animation-delay" (click)="goback()">Ok</button>
+        </div>
     </div>
 
 </div>

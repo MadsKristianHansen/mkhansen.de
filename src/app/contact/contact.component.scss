@@ -119,8 +119,130 @@ textarea:focus, input:focus{
     
 }
 
-.test {
-    height: 500px;
-    width: 500px;
-    background-color: chartreuse;
+.success-container {
+    background-color: black;
 }
+
+.success-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    p {
+        color: white;
+    }
+}
+
+button {
+    background-color: #000;
+    border: 1px solid #2DFCD8;
+    color: #2dfcd8;
+    width: 125px;
+    height: 45px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #2DFCD8;
+        color: black;
+    }
+}
+
+.opacity {
+    transition: opacity 3s ease-in;
+}
+
+  .opacity.sn-viewport--out {
+      opacity: 0 ;
+  }
+
+  .opacity.sn-viewport--in {
+    opacity: 1 ;  
+}
+
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+    letter-spacing: 2px;
+
+}
+
+.loading {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading .line-box {
+    padding: 2px;
+    width: 40%;
+    height: 20px;
+    border: 2px solid #267591;
+    border-radius: 20px;
+}
+
+.loading .line-box .line {
+    height: 20px;
+    border-radius: 20px;
+    background: #67D295;
+    animation: loading 1s forwards cubic-bezier(0,0,0,0);
+ }
+
+ h1{
+     position: relative;
+     color: #fff;
+     overflow: hidden;
+ }
+
+ h1:before {
+     content: '';
+     position: absolute;
+     left: 120%;
+     width: 120%;
+     height: 100%;
+     background: linear-gradient(90deg, transparent 0%, black 5%, black 100%);
+     animation: animate 2s linear forwards;
+ }
+
+ @keyframes loading {
+     0% {
+         width: 0%;
+     }
+     100% {
+         width: 100%;
+     }
+ }
+
+ @keyframes animate {
+     0% {
+         left: -20%;
+     }
+     50% {
+        left: -20%;
+    }
+     100% {
+         left: 120%;
+     }
+ }
+
+ .animation-delay {
+    animation: 3s ease 0s normal forwards 1 fadeIn;
+ }
+
+ @keyframes fadeIn {
+     0% {opacity: 0;}
+     66% {opacity: 0;}
+     100% {opacity: 1;}
+ }

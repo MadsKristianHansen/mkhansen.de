@@ -14,6 +14,7 @@ import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { DataprotectionComponent } from './dataprotection/dataprotection.component';
 import { InViewportModule } from '@thisissoon/angular-inviewport';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { InViewportModule } from '@thisissoon/angular-inviewport';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    InViewportModule
+    InViewportModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
