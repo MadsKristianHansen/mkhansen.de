@@ -52,7 +52,8 @@
     margin: 20px;
     z-index: 1;
     box-shadow: 0 0 9px #606060;
-    padding-bottom: 4px;
+    padding-bottom: 4px; 
+     
 
         
          
@@ -68,16 +69,23 @@
             justify-content: center;
             color: black;
             
+            
 
-            &:hover {
-                background-color: rgba(255, 255, 255, 0.856);
+            &:hover  {
+                background-color: #8d82828e;
+                backdrop-filter: blur(3px);
+                transform: scale(1.01);
+                box-shadow: 0 0 4px #c9bdbd;
+                
+               
+                
                 
                 
             }
 
             h2 {
                 
-                color:#01a1a7!important;
+                color:#ffffff!important;
                 margin-bottom: 8px;
             }
 
@@ -148,4 +156,8 @@
             width: 80px;
         }
     }
+}
+
+.blur-bg {
+    filter: opacity(30%) blur(4px);
 }
