@@ -28,7 +28,7 @@
         transition: all 225ms ease-in-out !important;
 
         &:hover {
-            border-bottom: 2px solid #2DFCD8;
+            border-bottom: 2px solid #f4f4f2;
         }
     }
 
@@ -46,7 +46,7 @@
         transition: all 225ms ease-in-out !important;
 
         &:hover {
-            border-bottom: 2px solid #2DFCD8;
+            border-bottom: 2px solid #f4f4f2;
         }
     }
 }
@@ -157,17 +157,18 @@ textarea:focus, input:focus{
 }
 
 button {
-    background-color: #000;
-    border: 1px solid #2DFCD8;
-    color: #2dfcd8;
+    background-color: #1a1a1a;
+    border: 1px solid #b6a4a0;
+    color: white;
     width: 125px;
     height: 45px;
     cursor: pointer;
     margin-bottom: 220px;
 
     &:hover {
-        background-color: #2DFCD8;
+        background-color: white;
         color: black;
+        box-shadow: 0 0 4px #c9bdbd;
     }
 }
 
@@ -213,15 +214,17 @@ button {
     padding: 2px;
     width: 40%;
     height: 20px;
-    border: 2px solid #267591;
+    border: 1px solid #555c5e;
     border-radius: 20px;
+    box-shadow: 0 0 4px #c9bdbd;
 }
 
 .loading .line-box .line {
     height: 20px;
     border-radius: 20px;
-    background: #67D295;
-    animation: loading 1s forwards cubic-bezier(0,0,0,0);
+    background: white;
+    animation: loading 1s forwards cubic-bezier(0, 0, 0, 0);
+    box-shadow: 0px 0px 8px aliceblue;
  }
 
  h1{
