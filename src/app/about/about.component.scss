@@ -36,6 +36,10 @@
     text-align: center;
     padding: 20px;
     width: 300px;
+
+    h2 {
+        height: 66px;
+    }
 }
 
 .slot-left {
@@ -96,6 +100,11 @@
 
     .sub-slot {
         transform: unset !important;
+
+        h2 {
+            height: unset;
+        }
+        
     }
 }
 
