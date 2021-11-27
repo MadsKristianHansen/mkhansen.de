@@ -30,9 +30,10 @@
     }
 
     img {
-        border: 12px solid white;
+        border: 0px solid white;
         border-radius: 175px;
-        height: 325px;
+        height: 210px;
+        display: none;
     }
 }
 
@@ -156,8 +157,18 @@
   }
 
   @media(max-width:650px) {
+    .welcome-content {
+      background-image:unset;
+      height: 60vh;
+    }
+
     .welcome-main {
       flex-direction: column;
+      padding-top: 50px;
+
+      img {
+        display: unset;
+      }
     }
 
     .greeting {
@@ -173,11 +184,21 @@
         scroll-behavior: smooth;
       }
     }
+
+    .continue_container {
+      margin-top: 20px;
+    }
   }
 
   @media(max-width:550px) {
     .welcome-main {
       font-size: 20px;
+    }
+  }
+
+  @media(max-width:318px) {
+    .welcome-main {
+      font-size: 18px;
     }
   }
 
