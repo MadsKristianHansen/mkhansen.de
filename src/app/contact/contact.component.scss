@@ -85,6 +85,10 @@
     .contact-content {
         width: -webkit-fill-available;
     }
+
+    .success-content {
+        height: unset !important;
+    }
 }
 
 @media(max-width:720px) {
@@ -147,9 +151,10 @@ textarea:focus, input:focus{
 
 .success-content {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    height: 53vh;
 
     p {
         color: white;
@@ -163,7 +168,6 @@ button {
     width: 125px;
     height: 45px;
     cursor: pointer;
-    margin-bottom: 220px;
 
     &:hover {
         background-color: white;
