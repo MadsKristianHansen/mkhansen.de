@@ -6,13 +6,13 @@
             <img src="../../assets/img/MadsKH.jpg">
         </div>
 
-        <div *ngIf="ls.german" class="greeting">Hi, <br>
+        <div *ngIf="ls.german" class="greeting opacity" [@inOutAnimation] >Hi, <br>
             Ich bin <p>Mads</p> Kristian Hansen <br>
             Front End Entwickler
             <a href="#contact">Kontaktiere mich</a>
         </div>
 
-        <div *ngIf="ls.english" class="greeting">Hi, <br>
+        <div *ngIf="ls.english" class="greeting opacity" [@inOutAnimation]>Hi, <br>
             I'm <p>Mads</p> Kristian Hansen <br>
             Front End Developer
             <a href="#contact">Contact me</a>

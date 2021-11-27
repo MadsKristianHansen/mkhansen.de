@@ -83,6 +83,10 @@
         h2 {
         font-size: 7.2vw;
     }}
+
+    h1 {
+        font-size: 5vw;
+    }
 }
 
 @media(max-width:650px) {
@@ -110,7 +114,16 @@
         textarea {
             width: 200px;
         }
+
+        h2 {
+            font-size: 9.2vw;
     }
+
+    h1 {
+        font-size: 6.5vw;
+    }
+}
+
 }
 
 textarea:focus, input:focus{
@@ -183,6 +196,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 25px;
 }
 
 .loading .line-box {
@@ -246,3 +260,5 @@ button {
      66% {opacity: 0;}
      100% {opacity: 1;}
  }
+
+ 
