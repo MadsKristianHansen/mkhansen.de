@@ -1,8 +1,15 @@
+<div class="row"></div>
+<div class="meta-contact-content">
+<div class="design-column">
+    <div class="design-column-sub"></div>
+</div>
+
 <div id="contact" class="contact-content main-padding">
 
     <div *ngIf="ls.german" class="contact-content">
         <h2>Kontaktiere mich.</h2>
-        <p *ngIf="!mailsuccess">Melden Sie sich mithilfe des Kontaktformulars, oder direkt per E-Mail an mads_hansen@hotmail.de</p>
+        <p *ngIf="!mailsuccess">Melden Sie sich mithilfe des Kontaktformulars, oder direkt per E-Mail an
+            mads_hansen@hotmail.de</p>
         <form *ngIf="!mailsuccess" (submit)="senden()"
             action="http://mads-kristian-hansen.developerakademie.com/mkhansen/send_mail.php" method="POST">
             <div class="form">
@@ -16,7 +23,18 @@
                     <textarea name="message" cols="30" rows="10" placeholder="Geben Sie Ihre Nachricht ein"
                         required></textarea>
                 </div>
-                <input class="send-button" type="submit" value="Senden">
+
+
+                <div class="contact-btn">
+                    
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <input class="send-button no-border" type="submit" value="Senden">
+                </div>
+
+
             </div>
         </form>
     </div>
@@ -34,7 +52,16 @@
                     Message
                     <textarea name="message" cols="30" rows="10" placeholder="Enter your message" required></textarea>
                 </div>
-                <input class="send-button" type="submit" value="Send">
+
+                <div class="contact-btn">
+                    
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <input class="send-button no-border" type="submit" value="Send">
+                </div>
+
             </div>
         </form>
     </div>
@@ -59,10 +86,17 @@
                 </div>
             </div>
 
-            <p class="animation-delay" *ngIf="ls.german">Ihre E-Mail wurde erfolgreich versendet! Ich werde mich baldmöglichst bei Ihnen melden.</p>
-            <p class="animation-delay" *ngIf="ls.english">Your email has been successfully sent! I will reply as soon as possible. </p>
+            <p class="animation-delay" *ngIf="ls.german">Ihre E-Mail wurde erfolgreich versendet! Ich werde mich
+                baldmöglichst bei Ihnen melden.</p>
+            <p class="animation-delay" *ngIf="ls.english">Your email has been successfully sent! I will reply as soon as
+                possible. </p>
             <button class="animation-delay" (click)="goback()">Ok</button>
         </div>
     </div>
 
+</div>
+
+<div class="design-column">
+    <div class="design-column-sub"></div>
+</div>
 </div>
