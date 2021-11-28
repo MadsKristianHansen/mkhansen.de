@@ -79,10 +79,11 @@
 
 @media(max-width: 870px) {
     .meta-contact-content {
-        background-image: unset;
-        background-color: black;
+        background-image: unset !important;
+        background-color: black !important;
         height: unset;
         width: unset;
+        justify-content: center !important;
     }
 
     .design-column {
