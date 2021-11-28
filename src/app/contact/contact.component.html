@@ -9,18 +9,17 @@
         <h2>Kontaktiere mich.</h2>
         <p *ngIf="!mailsuccess">Melden Sie sich mithilfe des Kontaktformulars, oder direkt per E-Mail an
             mads_hansen@hotmail.de</p>
-        <form *ngIf="!mailsuccess" (submit)="senden()"
-            action="http://mads-kristian-hansen.developerakademie.com/mkhansen/send_mail.php" method="POST">
+        <form *ngIf="!mailsuccess" (submit)="senden()">
             <div class="form">
-                <div class="info">Name<input name="name" type="text" placeholder="Geben Sie Ihren Namen ein" required>
+                <div class="info">Name<input name="name" type="text" placeholder="Geben Sie Ihren Namen ein" required [(ngModel)]="credentials.name"/>
                 </div>
                 <div class="info">E-mail Adresse<input name="email" type="email"
-                        placeholder="Geben Sie Ihre E-Mail Adresse ein" required>
+                        placeholder="Geben Sie Ihre E-Mail Adresse ein" required [(ngModel)]="credentials.email"/>
                 </div>
                 <div class="info">
                     Nachricht
                     <textarea name="message" cols="30" rows="10" placeholder="Geben Sie Ihre Nachricht ein"
-                        required></textarea>
+                        required [(ngModel)]="credentials.message"></textarea>
                 </div>
 
 
