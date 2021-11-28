@@ -33,33 +33,37 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 export class ContactComponent implements OnInit {
 
   mailsuccess: boolean;
-  sendMailUrl: string;
-  credentials = {name: '', email: '', message: ''};
+  name = '';
+  email = '';
+  message = '';
+  sendMailUrl;
+  
 
   constructor(public ls: LanguageService) {
     this.mailsuccess = false;
-    this.sendMailUrl = 'http://mads-kristian-hansen.developerakademie.com/mkhansen/send_mail.php';
+    this.name = this.name;
+    this.email = this.email;
+    this.message = this.message;
+    this.sendMailUrl = 'https://www.mkhansen.de/send_mail.php';
    }
 
   ngOnInit(): void {
   }
 
-  //senden() {
-    //this.mailsuccess = true;
-    //return false;
-  //}
-
   senden() {
     let formData = new FormData()
-      formData.append('name', this.credentials.name);
-      formData.append('email', this.credentials.email);
-      formData.append('message', this.credentials.message);
+      formData.append('name', this.name);
+      formData.append('email', this.email);
+      formData.append('message', this.message);
 
     fetch(this.sendMailUrl, {
       method: "POST",
       body: formData
-    });
+    })
+
+    this.mailsuccess = true;
     return false;
+    
   }
 
   goback() {

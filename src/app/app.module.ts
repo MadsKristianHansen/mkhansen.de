@@ -15,6 +15,7 @@ import { HomeComponent } from './home/home.component';
 import { DataprotectionComponent } from './dataprotection/dataprotection.component';
 import { InViewportModule } from '@thisissoon/angular-inviewport';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     InViewportModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
