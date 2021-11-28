@@ -2,7 +2,7 @@
 
 ########### CONFIG ###############
 
-$recipient = 'mads_hansen@hotmail.de';
+$recipient = 'mailto@mkhansen.de';
 
 
 ########### CONFIG END ###########
@@ -39,8 +39,8 @@ switch ($_SERVER['REQUEST_METHOD']) {
     case ("POST"): //Send the email;
         header("Access-Control-Allow-Origin: *");
 
-        $subject = "Contact From " . $_POST['name'];
-        $headers = "From: " . $_POST['email'];
+        $subject = "Contact From " . $_POST['name'].' ('.$_POST['email'].')';
+        $headers = "From:  contactme@mkhansen.de";
 
         mail($recipient, $subject, $_POST['message'], $headers);
         
