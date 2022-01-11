@@ -35,6 +35,8 @@ export class WorkComponent implements OnInit {
   showDetails2: boolean;
   showDetails3: boolean;
   showDetails4: boolean;
+  showDetails5: boolean;
+  showDetails6: boolean;
 
   showAll: boolean;
   showAngular: boolean;
@@ -44,6 +46,8 @@ export class WorkComponent implements OnInit {
     this.showDetails2 = false;
     this.showDetails3 = false;
     this.showDetails4 = false;
+    this.showDetails5 = false;
+    this.showDetails6 = false;
     this.showAll = true;
     this.showAngular = false;
     this.showJavaScript = false;

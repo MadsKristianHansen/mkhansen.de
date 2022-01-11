@@ -386,7 +386,7 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-image: url(../../assets/img/marble.jpg);
+    background: linear-gradient(rgba(182, 164, 160, 0.94), rgba(182, 164, 160, 0.94)), url(../../assets/img/marble.jpg);
     height: 100%;
     width: 100%;
     backdrop-filter: blur(100px);
@@ -400,13 +400,6 @@ button {
     width: -webkit-fill-available;
 }
 
-.design-column-sub {
-    height: 100%;
-    
-    background-color: #b6a4a0f0;
-    
-    
-}
 
 
 

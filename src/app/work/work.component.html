@@ -39,6 +39,16 @@
                 </div>
                 <img src="assets/img/lieferando2.png">
             </div>
+            <div *ngIf="showAll || showJavaScript" (mouseenter)="showDetails5=true" (mouseleave)="showDetails5=false"
+                class="project">
+                <div *ngIf="showDetails5" class="project-details" [@inOutAnimation]>
+                    <h2>El Pollo Loco</h2>
+                    <p><b>Javascript - Jump & Run Game</b></p>
+                    <a href="http://mads-kristian-hansen.developerakademie.com/elpolloloco/index.html"
+                        target="_blank">Anzeigen</a>
+                </div>
+                <img src="assets/img/Opción2.png">
+            </div>
             <div *ngIf="showAll || showAngular" (mouseenter)="showDetails4=true" (mouseleave)="showDetails4=false"
                 class="project">
                 <div *ngIf="showDetails4" class="project-details" [@inOutAnimation]>
@@ -47,6 +57,15 @@
                     <a href="#">Anzeigen</a>
                 </div>
                 <img src="assets/img/portfolio.png">
+            </div>
+            <div *ngIf="showAll || showAngular" (mouseenter)="showDetails6=true" (mouseleave)="showDetails6=false"
+                class="project">
+                <div *ngIf="showDetails6" class="project-details" [@inOutAnimation]>
+                    <h2>Ring of Fire</h2>
+                    <p><b>Angular/Firebase - Web game</b></p>
+                    <a href="https://ring-of-fire-44abb.web.app/" target="_blank">Anzeigen</a>
+                </div>
+                <img src="assets/img/ringoffire.png">
             </div>
         </div>
     </div>
@@ -86,10 +105,20 @@
                 <div *ngIf="showDetails3" class="project-details" [@inOutAnimation]>
                     <h2>Lieferando</h2>
                     <p><b>Javascript - Lieferando replica</b></p>
-                    <a href="http://mads-kristian-hansen.developerakademie.com/lieferando/14%20Lieferando/lieferando.html"
+                    <a href="http://mads-kristian-hansen.developerakademie.com/lieferando/lieferando.html"
                         target="_blank">Show</a>
                 </div>
                 <img src="assets/img/lieferando2.png">
+            </div>
+            <div *ngIf="showAll || showJavaScript" (mouseenter)="showDetails5=true" (mouseleave)="showDetails5=false"
+                class="project">
+                <div *ngIf="showDetails5" class="project-details" [@inOutAnimation]>
+                    <h2>El Pollo Loco</h2>
+                    <p><b>Javascript - Jump & Run Game</b></p>
+                    <a href="http://mads-kristian-hansen.developerakademie.com/elpolloloco/index.html"
+                        target="_blank">Show</a>
+                </div>
+                <img src="assets/img/Opción2.png">
             </div>
             <div *ngIf="showAll || showAngular" (mouseenter)="showDetails4=true" (mouseleave)="showDetails4=false"
                 class="project">
@@ -99,6 +128,15 @@
                     <a href="#">Show</a>
                 </div>
                 <img src="assets/img/portfolio.png">
+            </div>
+            <div *ngIf="showAll || showAngular" (mouseenter)="showDetails6=true" (mouseleave)="showDetails6=false"
+                class="project">
+                <div *ngIf="showDetails6" class="project-details" [@inOutAnimation]>
+                    <h2>Ring of Fire</h2>
+                    <p><b>Angular/Firebase - Web game</b></p>
+                    <a href="https://ring-of-fire-44abb.web.app/" target="_blank">Show</a>
+                </div>
+                <img src="assets/img/ringoffire.png">
             </div>
         </div>
     </div>
