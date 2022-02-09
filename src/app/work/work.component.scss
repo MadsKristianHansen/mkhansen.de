@@ -116,7 +116,20 @@
             object-fit: cover;
             box-shadow: 0 0 9px #606060;
         }
+
     }
+}
+
+.slimimage-fit {
+    object-fit: contain !important;
+    background-color: #f2f2f5;
+    
+}
+
+.slimimage-fit2 {
+    object-fit: contain !important;
+    background-color: #1a1a1a;
+    
 }
 
 .kochwelt {
